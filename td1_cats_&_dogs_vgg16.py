@@ -12,15 +12,6 @@ import zipfile
 import os
 drive.mount("/content/drive", force_remount=True)
 
-# !wget --no-check-certificate \
-#     "https://www.kaggle.com/datasets/phucthaiv02/butterfly-image-classification/download?datasetVersionNumber=1" \
-#     -O "/tmp/butterfly.zip"
-
-# local_zip = '/tmp/butterfly.zip'
-# zip_ref = zipfile.ZipFile(local_zip, 'r')
-# zip_ref.extractall('/tmp')
-# zip_ref.close()
-
 print(f"Total number of Cats is {len(os.listdir('/tmp/PetImages/Cat/'))}")
 # Total number of Dogs.
 print(f"Total number of Dogs is {len(os.listdir('/tmp/PetImages/Dog/'))}")
